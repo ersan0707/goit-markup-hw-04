@@ -55,7 +55,7 @@ ol, ul  {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #404BBF;
+    color: #404bbf;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -285,6 +285,7 @@ a.menu-list-add:focus {
   background-color: #F4F4FD;
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 .future-item-img{
     width: 64px;
@@ -336,8 +337,15 @@ header-three{
 .member-info-social-icon-container {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     margin-top: 24px;
+}
+.member-info-social-icon-item-list{
+    width: 40px;
+    height: 40px;
+}
+.social-media{
+    fill: #f4f4fd
 }
 .member-info-social-icon-item {
     width: 100%;

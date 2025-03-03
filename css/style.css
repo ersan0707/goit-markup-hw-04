@@ -273,7 +273,7 @@ a.menu-list-add:focus {
 }
 
 .futures-li{
-    width:calc((100%-3*24px)/4);
+    flex-basis: calc((100% - 72px) / 4);
 
 }
 .futures-item-container {
@@ -318,9 +318,8 @@ header-three{
 }
 
 .team-li {
-
+    flex-basis: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
-    width:calc((100%-72px)/4) ;
     border-radius: 0 0 4px 4px;
     text-align: center;
     box-shadow: 0px 1px 6px rgba(46,47,66,0.08),
@@ -380,13 +379,16 @@ header-three{
     row-gap: 48px;
     
 }
-.portfolio-list-item:hover{
-    flex-basis: calc((100%-48px)/3);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+.portfolio-list-item{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-basis: calc((100% - 48px) / 3);
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+.portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
 
 .portfolio-list-item {
     flex: 1;
@@ -443,78 +445,78 @@ header-three{
 
 /* Footer Bölümü CSS Kurlları (a etiketi ve span etiketi header bölümündeki nav içindeki css'i kullanır) */
 
-.footer {
-    background-color: #2E2F42;
+.site-footer {
     padding: 100px 0;
-}
-.footer-container{
+    background-color: #2e2f42;
+  }
+  
+  .site-footer .logo {
+    margin-bottom: 16px;
+  }
+  
+  .footer-container {
     display: flex;
     align-items: baseline;
-}
-.footer-social-icon{
-    display: flex;
-    flex-direction: column;
-}
-.footer-social-icon-container{
+  }
+  
+  .footer-social-icon-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 16px;
-}
-.social-icon-p{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-
-}
-.footer-social-item{
+    padding: 0 15px;
+    height: 42px;
+  }
+  
+  .footer-social-item {
     width: 40px;
     height: 40px;
-
-}
-.footer-social-icon-item{
+  }
+  
+  .footer-social-icon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .footer-social-icon-item {
     width: 100%;
     height: 100%;
-    gap: 30px;
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-}
-.footer-social-icon-item:hover,
-.footer-social-icon-item:focus{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-social-icon-item:hover,
+  .footer-social-icon-item:focus {
     background-color: #31d0aa;
-}
-.footer-social-icon-item-svg{
-    fill: #f4f4fd
-}
-.nav-a {
-    display: inline-block;
-    margin-bottom: 16px;
-}
-p {
-    margin-bottom: 0;
-}
-.footer-site-info{
-    margin-right: 120px;
-}
-.footer-text {
-    text-align: left;
+  }
+  
+  .footer-social-icon-item-svg {
+    fill: #f4f4fd;
+  }
+  
+  .footer-text {
     max-width: 264px;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+  }
+  
+  .footer-site-info {
+    margin-right: 120px;
+  }
+  
+  .footer-social-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
-}
-
-.nav-span {
-    color: #F4F4FD;
-}
+  }
